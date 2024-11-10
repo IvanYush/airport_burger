@@ -16,6 +16,8 @@ import static java.math.RoundingMode.CEILING;
  */
 @Slf4j
 public class PayTerminal {
+    private static final int SLEEP_MILLIS = 1_000_000_000;
+    private static final int EXCHANGE_RATE = 95;
 
     /**
      * Оплата блюда
@@ -48,7 +50,7 @@ public class PayTerminal {
      */
     @SneakyThrows
     private BigDecimal integrationWithBank() {
-        Thread.sleep(1_000_000_000);
-        return BigDecimal.valueOf(95);
+        Thread.sleep(SLEEP_MILLIS);
+        return BigDecimal.valueOf(EXCHANGE_RATE);
     }
 }

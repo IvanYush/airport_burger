@@ -1,6 +1,6 @@
 package unit;
 
-import com.javaacademy.burger.*;
+import com.javaacademy.burger.Kitchen;
 import com.javaacademy.burger.exception.KitchenHasNoGasException;
 import com.javaacademy.burger.exception.UnsupportedDishTypeException;
 import org.junit.jupiter.api.Assertions;
@@ -10,6 +10,9 @@ import org.junit.jupiter.api.Test;
 import static com.javaacademy.burger.dish.DishType.BURGER;
 import static com.javaacademy.burger.dish.DishType.FUAGRA;
 
+/**
+ * Тест кухни
+ */
 public class KitchenTest {
 
     @Test

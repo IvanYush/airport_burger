@@ -2,14 +2,17 @@ package unit;
 
 import com.javaacademy.burger.Kitchen;
 import com.javaacademy.burger.Waitress;
-import com.javaacademy.burger.dish.DishType;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
-import static com.javaacademy.burger.dish.DishType.*;
+import static com.javaacademy.burger.dish.DishType.BURGER;
+import static com.javaacademy.burger.dish.DishType.FUAGRA;
 
+/**
+ * Тест официанта
+ */
 public class WaitressTest {
 
     @Test
